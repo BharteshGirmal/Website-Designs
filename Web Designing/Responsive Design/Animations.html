@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations and Keyframes</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: aqua;
+        border: 2px solid red;
+        display: grid; /* Use grid layout */
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        gap: 20px; /* Space between boxes */
+        justify-items: center; /* Center items horizontally */
+        align-items: center; /* Center items vertically */
+        padding: 20px; /* Padding around the grid */
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 2px double crimson;
+        background-color: darkorange;
+        border-radius: 15px;
+        position: relative; /* Necessary for absolute positioning */
+      }
+      #box1 {
+        animation: growLeft 5s infinite;
+      }
+      #box3 {
+        border-radius: 50%;
+        animation: circularAnimation 8s infinite;
+      }
+
+      @keyframes growLeft {
+        0% {
+          width: 100px;
+          transform: translateX(0);
+        }
+        100% {
+          width: 400px;
+          transform: translateX(-50px); /* Move left */
+        }
+      }
+
+      @keyframes circularAnimation {
+        0% {
+          top: 50px; /* Starting position (top) */
+          left: 50%; /* Center horizontally */
+          transform: translate(-50%, -50%); /* Center the element */
+        }
+        25% {
+          top: 150px; /* Move down */
+          left: 75%; /* Move to the right */
+          transform: translate(-50%, -50%); /* Center the element */
+        }
+        50% {
+          top: 250px; /* Move down further */
+          left: 50%; /* Center horizontally */
+          transform: translate(-50%, -50%); /* Center the element */
+        }
+        75% {
+          top: 150px; /* Move back up */
+          left: 25%; /* Move to the left */
+          transform: translate(-50%, -50%); /* Center the element */
+        }
+        100% {
+          top: 50px; /* Return to starting position */
+          left: 50%; /* Center horizontally */
+          transform: translate(-50%, -50%); /* Center the element */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2"></div>
+      <div class="box" id="box3"></div>
+      <div class="box" id="box4"></div>
+    </div>
+  </body>
+</html>

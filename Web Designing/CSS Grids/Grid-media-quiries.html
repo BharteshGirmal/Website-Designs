@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid and Media Queries</title>
+    <style>
+      .container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: "navbar navbar navbar navbar" "aside section section section" "Footer Footer Footer Footer";
+      }
+      #navbar {
+        background-color: darkslateblue;
+        color: wheat;
+        font-size: 18px;
+        grid-area: navbar;
+      }
+      #navbar ul {
+        list-style: none;
+        display: flex;
+        align-items: start;
+        justify-content: flex-start;
+        text-align: center;
+      }
+      #navbar ul .item {
+        margin: 0 10px;
+        padding: 5px 15px;
+        background-color: rgb(23, 171, 171);
+        color: rgb(227, 227, 227);
+        border-radius: 15px;
+      }
+      #navbar ul .item:hover {
+        transition: all 0.5s ease 0.5s;
+        background-color: rgb(157, 22, 10);
+        color: wheat;
+      }
+      #section {
+        padding: 20px;
+        background-color: aliceblue;
+        grid-area: section;
+      }
+      #aside {
+        padding: 20px;
+        background-color: rgb(130, 130, 190);
+        grid-area: aside;
+      }
+      #Footer {
+        padding: 20px;
+        background-color: rgb(75, 75, 119);
+        color: beige;
+        grid-area: Footer;
+      }
+
+      @media only screen and (max-width: 300px) {
+        body {
+          background-color: red;
+        }
+        #navbar ul {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: justify;
+        }
+        #navbar ul .item {
+          margin: 10px auto;
+        }
+        .container {
+          grid-gap: 10px;
+          grid-template-columns: repeat(auto-fit, 1fr);
+          grid-template-areas: "navbar navbar navbar navbar" "aside aside aside aside" "section section section section" "Footer Footer Footer Footer";
+        }
+      }
+      @media only screen and (min-width: 300px) and (max-width: 500px) {
+        body {
+          background-color: blue;
+        }
+        #navbar ul {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: justify;
+        }
+        #navbar ul .item {
+          margin: 10px auto;
+        }
+        .container {
+          grid-gap: 10px;
+          grid-template-columns: 1fr; /* Ensure full width */
+          grid-template-areas:
+            "navbar"
+            "aside"
+            "section"
+            "Footer"; /* Each area takes full width */
+        }
+      }
+      @media (min-width: 500px) and (max-width: 800px) {
+        body {
+          background-color: yellow;
+        }
+      }
+      @media (min-width: 800px) {
+        body {
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav id="navbar">
+        <ul>
+          <li class="item">Home</li>
+          <li class="item">Services</li>
+          <li class="item">Contact us</li>
+          <li class="item">Signin</li>
+        </ul>
+      </nav>
+      <section id="section">This is a section</section>
+      <aside id="aside">This is a Aside section</aside>
+      <footer id="Footer"><h2>This is a Footer</h2></footer>
+    </div>
+  </body>
+</html>

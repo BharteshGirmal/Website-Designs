@@ -1,0 +1,286 @@
+:root {
+      --border-col: red
+}
+
+html {
+      scroll-behavior: smooth;
+}
+
+/* logo section */
+.logo {
+      margin: 10px 20px;
+}
+
+.logo img {
+      height: 60px;
+      width: inherit;
+      border-radius: 50%;
+}
+
+
+/* navigation bar  */
+.navbar {
+      margin: 0px;
+      padding: 0px;
+      position: relative;
+}
+
+.navbar {
+      display: flex;
+      align-items: center;
+      position: sticky;
+      top: 0px;
+
+}
+
+.navbar::before {
+      content: '';
+      top: 0px;
+      left: 0px;
+      position: absolute;
+      background-color: black;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.8;
+}
+
+
+.navbar ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+}
+
+.navbar ul li {
+      display: block;
+      margin: 0 10px;
+      text-decoration: none;
+      color: wheat;
+      border: 1px solid whitesmoke;
+      border-radius: 30px;
+}
+
+.navbar ul li a {
+      display: block;
+      padding: 10px 30px;
+      text-decoration: none;
+      color: wheat;
+}
+
+.navbar ul li a:hover {
+      color: black;
+      background-color: rgb(186, 186, 201);
+      border-radius: 30px;
+
+}
+
+/* home section  */
+
+/* Home Section */
+#home {
+      display: flex;
+      flex-direction: column;
+      padding: 3px 200px;
+      height: 498px;
+      justify-content: center;
+      align-items: center;
+}
+
+#home::before {
+      content: "";
+      position: absolute;
+      background: url('../Img/salad-2068220_1920.jpg') no-repeat center center/cover;
+      height: 642px;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.89;
+}
+
+#home h1 {
+      color: white;
+      text-align: center;
+      font-family: 'Bree Serif', serif;
+}
+
+#home p {
+      color: white;
+      text-align: center;
+      font-size: 1.5rem;
+      font-family: 'Bree Serif', serif;
+}
+
+/* service section */
+.services {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+}
+
+.service-container::before {
+      content: '';
+      position: absolute;
+      background: url('../Img/cereal-898073_1920.jpg') no-repeat center center/cover;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.5;
+}
+
+.service-container {
+      position: relative;
+      height: 684px;
+}
+
+.services .box {
+      justify-content: space-evenly;
+      padding: 20px;
+      border: 2px solid darkviolet;
+      background-color: #fefefe;
+      box-shadow: 3px 3px 5px rgb(80, 76, 76);
+      border-radius: 30px;
+      width: 400px;
+      margin: 0 10px;
+      z-index: -1;
+}
+
+.services .box img {
+      height: 160px;
+      display: block;
+      margin: auto;
+}
+
+.services .box:hover {
+      transition: all 1s ease-in-out 0.1s;
+      transform: scale(1.05);
+      background-color: rgb(255, 139, 162);
+      color: white;
+      font-size: 1.1rem;
+}
+
+
+
+/* client section  */
+#clients {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: center;
+}
+
+
+
+#clients img {
+
+      height: 140px;
+      border-radius: 100%;
+}
+
+
+
+#client-section::before {
+      content: '';
+      position: absolute;
+      background: url('../Img/cartlogo.png') no-repeat center center/cover;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.5;
+}
+
+#client-section {
+      height: 344px;
+      position: relative;
+      z-index: -1;
+
+}
+
+.client-item:hover {
+      transition: all 1s ease-in-out 0.1s;
+      transform: scale(1.1);
+}
+
+
+/* contact section */
+
+.contact-section {
+      position: relative;
+      padding-bottom: 20px;
+}
+
+.contact-section::before {
+      content: '';
+      position: absolute;
+      background: url('../Img/Free Vector _ Young people holding a blank banner.jfif') no-repeat center center/cover;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.5;
+}
+
+#contact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid black;
+      border-radius: 20px;
+      background-color: rgb(195, 249, 211);
+      width: 500px;
+      margin: auto;
+      padding: 20px;
+}
+
+#contact .form-group {
+      display: flex;
+      flex-direction: column;
+}
+
+#contact .form-group label,
+#contact .form-group input {
+      margin: 10px 30px;
+}
+
+#contact .form-group input {
+      height: 30px;
+      padding: 8px;
+      background-color: azure;
+      color: black;
+      width: 400px;
+      border: none;
+      border-radius: 10px;
+}
+
+/* footer section */
+footer {
+      background-color: black;
+      color: wheat;
+      padding: 9px;
+      opacity: 0.7;
+}
+
+.h-primary {
+      font-size: 3.5rem;
+      padding: 12px;
+}
+
+.h-secondary {
+      font-size: 2rem;
+      padding: 12px;
+}
+
+.btn {
+      cursor: pointer;
+      padding: 6px 20px;
+      margin: 15px;
+      border: 2px solid white;
+      background-color: crimson;
+      font-size: 1.1rem;
+      border-radius: 15px;
+      color: #fefefe;
+}
+
+.center {
+      text-align: center;
+}

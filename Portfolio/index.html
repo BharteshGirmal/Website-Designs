@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio- Bhartesh Girmal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="module" src="/script.js"></script>
+  </head>
+  <body class="bg-black">
+    <!-- Navigation Menu  -->
+    <nav class="navbar navbar-expand-lg py-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./Images/Letter B Logo.jpg"
+            alt="Logo"
+            class="navbar-logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler border=0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav m-auto gap-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light active" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Contact</a>
+            </li>
+          </ul>
+
+          <a
+            class="btn mybtn rounded-0 text-uppercase bg-green"
+            href="#"
+            role="button"
+            >Lets Talk</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- main section  -->
+    <main>
+      <section class="hero-section d-flex align-items-center">
+        <div class="container">
+          <div class="row align-items-center mt-4 gap-lg-0">
+            <div class="col-lg-6">
+              <span class="text-white text-uppercase main-text">Hello I'm</span>
+              <h1 class="text-white fw-bold">
+                Web Designer & <span class="text-green">Developer</span>
+              </h1>
+              <p class="text-gray mt-4 mb-4 para">
+                Hi i am Bhartesh Girmal, a passionate Web Develper from
+                Maharashta- India welcome to my Profile
+              </p>
+              <a
+                class="btn mybtn rounded-0 text-uppercase bg-green"
+                href="#"
+                role="button"
+                >View Portfolio</a
+              >
+            </div>
+            <div class="col-lg-6">
+              <div class="image-container mx-auto"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row align-items-center gap-5 gap-lg-0 my-5">
+            <div class="col-lg-6 glow order-last order-lg-first">
+              <div class="aboutme glow">
+                <img
+                  src="./Images/Letter B Logo.jpg"
+                  id="aboutUsImg"
+                  alt="About us"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <span class="text-white text-uppercase main-text"
+                >let me intoduce myself</span
+              >
+              <h2 class="text-white fw-bold">About Me</h2>
+              <span class="text-white"
+                >A story of hardwork and preserverance</span
+              >
+              <p class="para text-gray mt-4 mb-4 para">
+                Hi I am Bhartesh Girmal web developer and designer specializing
+                in creating visually engaging user-friendly websites. My
+                expertise blends innovative design with robust functionality to
+                brinmg your digital ideas to life.
+              </p>
+              <h2 class="text-white fw-bold">Contact</h2>
+              <p class="para text-gray mt-4 mb-4 para">
+                Email:
+                <a href="girmalbhartesh9178@gmail.com" target="_blank"
+                  >girmalbhartesh9178@gmail.com</a
+                >
+              </p>
+              <p class="para text-gray mt-4 mb-4 para">
+                Github:
+                <a href="www.github/BharteshGirmal" target="_blank"
+                  >www.github/BharteshGirmal</a
+                >
+              </p>
+              <a
+                class="btn mybtn rounded-0 text-uppercase bg-green"
+                href="#"
+                role="button"
+                >Hire me</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tehnology-section py-5">
+        <div class="container text-center">
+          <h2 class="text-white fw-bold mb-5">Technologies Known</h2>
+          <div class="row justify-content-center mb-2">
+            <!-- Card 1: React -->
+            <div
+              class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card bg-dark-blue glowCard card-hover w-100">
+                <img
+                  src="./Images/React_Logo_PNG_Vector__SVG__Free_Download-removebg-preview.png"
+                  class="card-img-top"
+                  alt="React Logo"
+                />
+                <div class="card-body">
+                  <p class="card-text text-gray">React</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Redux -->
+            <div
+              class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card bg-dark-blue glowCard card-hover w-100">
+                <img
+                  src="./Images/Redux_Logo_PNG_Vector__SVG__Free_Download-removebg-preview.png"
+                  class="card-img-top"
+                  alt="Redux Logo"
+                />
+                <div class="card-body">
+                  <p class="card-text text-gray">Redux</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: TypeScript -->
+            <div
+              class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card bg-dark-blue glowCard card-hover w-100">
+                <img
+                  src="./Images/TypeScript_Logo_PNG_Vector__SVG__Free_Download-removebg-preview.png"
+                  class="card-img-top invert"
+                  alt="TypeScript Logo"
+                />
+                <div class="card-body">
+                  <p class="card-text text-gray">TypeScript</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: GraphQL -->
+            <div
+              class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card bg-dark-blue glowCard card-hover w-100">
+                <img
+                  src="./Images/GraphQL_Resolvers_in_Apollo-removebg-preview.png"
+                  class="card-img-top"
+                  alt="GraphQL Logo"
+                />
+                <div class="card-body">
+                  <p class="card-text text-gray">GraphQL</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5: JavaScript -->
+            <div
+              class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card bg-dark-blue glowCard card-hover w-100">
+                <img
+                  src="./Images/What_is_Javascript__-_Take_a_Look_at_Our_In-Depth_Guide-removebg-preview.png"
+                  class="card-img-top invert"
+                  alt="JavaScript Logo"
+                />
+                <div class="card-body">
+                  <p class="card-text text-gray">JavaScript</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6: MySQL -->
+            <div
+              class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card bg-dark-blue glowCard card-hover w-100">
+                <img
+                  src="./Images/MySQL_Logo_PNG_Vector__EPS__Free_Download-removebg-preview.png"
+                  class="card-img-top"
+                  alt="MySQL Logo"
+                />
+                <div class="card-body">
+                  <p class="card-text text-gray">MySQL</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 7: Java -->
+            <div
+              class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card bg-dark-blue glowCard card-hover w-100">
+                <img
+                  src="./Images/Java_Development_Kit_Oracle_Corporation_Programming_Language_String_PNG_-_Free_Download-removebg-preview.png"
+                  class="card-img-top"
+                  alt="Java Logo"
+                />
+                <div class="card-body">
+                  <p class="card-text text-gray">Java</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 8: Linux -->
+            <div
+              class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card bg-dark-blue glowCard card-hover w-100">
+                <img
+                  src="./Images/Linux_Tux_Logo_PNG_Vector__EPS__Free_Download-removebg-preview.png"
+                  class="card-img-top bg-light"
+                  alt="Linux Logo"
+                />
+                <div class="card-body">
+                  <p class="card-text text-gray">Linux</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 9: GitHub -->
+            <div
+              class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card bg-dark-blue glowCard card-hover w-100">
+                <img
+                  src="./Images/Github_Logo_free_icons_designed_by_Dave_Gandy-removebg-preview.png"
+                  class="card-img-top invert"
+                  alt="GitHub Logo"
+                />
+                <div class="card-body">
+                  <p class="card-text text-gray">GitHub</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 10: CSS -->
+            <div
+              class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card bg-dark-blue glowCard card-hover w-100">
+                <img
+                  src="./Images/Css_3_free_icons_designed_by_Freepik-removebg-preview.png"
+                  class="card-img-top"
+                  alt="CSS Logo"
+                />
+                <div class="card-body">
+                  <p class="card-text text-gray">CSS</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 11: HTML -->
+            <div
+              class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card bg-dark-blue glowCard card-hover w-100">
+                <img
+                  src="./Images/download__1_-removebg-preview.png"
+                  class="card-img-top"
+                  alt="HTML Logo"
+                />
+                <div class="card-body">
+                  <p class="card-text text-gray">HTML</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-section text-center py-5">
+        <h2 class="text-white fw-bold mb-5">Projects Completed</h2>
+        <div class="container">
+          <div class="row">
+            <!-- Project Card 1 -->
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center"
+            >
+              <div class="card glow bg-dark-blue w-100">
+                <div class="image-container2">
+                  <img
+                    src="./Images/Letter B Logo.jpg"
+                    class="card-img-top"
+                    alt="Capstone Clothing App"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-white">Capstone Clothing App</h5>
+                  <p class="card-text text-gray">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Delectus consequuntur natus officia quos esse illo
+                    reiciendis pariatur commodi alias accusamus.
+                  </p>
+                  <a
+                    class="btn mybtn rounded-0 text-uppercase bg-green"
+                    href="#"
+                    role="button"
+                  >
+                    Preview
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center"
+            >
+              <div class="card glow bg-dark-blue w-100">
+                <div class="image-container2">
+                  <img
+                    src="./Images/Letter B Logo.jpg"
+                    class="card-img-top"
+                    alt="Monster Rolodex"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-white">Monster Rolodex</h5>
+                  <p class="card-text text-gray">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Delectus consequuntur natus officia quos esse illo
+                    reiciendis pariatur commodi alias accusamus.
+                  </p>
+                  <a
+                    class="btn mybtn rounded-0 text-uppercase bg-green"
+                    href="#"
+                    role="button"
+                  >
+                    Preview
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center"
+            >
+              <div class="card glow bg-dark-blue w-100">
+                <div class="image-container2">
+                  <img
+                    src="./Images/Letter B Logo.jpg"
+                    class="card-img-top"
+                    alt="E-Quiz Web Application"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-white">E-Quiz Web Application</h5>
+                  <p class="card-text text-gray">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Delectus consequuntur natus officia quos esse illo
+                    reiciendis pariatur commodi alias accusamus.
+                  </p>
+                  <a
+                    class="btn mybtn rounded-0 text-uppercase bg-green"
+                    href="#"
+                    role="button"
+                  >
+                    Preview
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial-section text-center">
+        <h2 class="text-green fw-bold mb-5">Testimonial</h2>
+        <div class="container">
+          <!-- <div class="swiper mySwiper mt-4">
+            <div class="swiper-wrapper py-4">
+              <div class="swiper-slide bg-dark-blue text-green py-4 px-5">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="profileIcon"></div>
+                    </div>
+                    <div class="col-10 text-start">
+                      <h5 class="text-white">Bhartesh Girmal</h5>
+                      <p class="text-white">Desginer</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p class="text-start text-gray">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Id aliquid ut quas temporibus maiores nostrum nulla,
+                        quia hic impedit dolore at exercitationem corrupti
+                        praesentium consectetur labore vel dolorum, dignissimos
+                        ad.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-wrapper py-4">
+              <div class="swiper-slide bg-dark-blue text-green py-4 px-5">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="profileIcon"></div>
+                    </div>
+                    <div class="col-10 text-start">
+                      <h5 class="text-white">Bhartesh Girmal</h5>
+                      <p class="text-white">Desginer</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p class="text-start text-gray">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Id aliquid ut quas temporibus maiores nostrum nulla,
+                        quia hic impedit dolore at exercitationem corrupti
+                        praesentium consectetur labore vel dolorum, dignissimos
+                        ad.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-wrapper py-4">
+              <div class="swiper-slide bg-dark-blue text-green py-4 px-5">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="profileIcon"></div>
+                    </div>
+                    <div class="col-10 text-start">
+                      <h5 class="text-white">Bhartesh Girmal</h5>
+                      <p class="text-white">Desginer</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p class="text-start text-gray">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Id aliquid ut quas temporibus maiores nostrum nulla,
+                        quia hic impedit dolore at exercitationem corrupti
+                        praesentium consectetur labore vel dolorum, dignissimos
+                        ad.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-wrapper py-4">
+              <div class="swiper-slide bg-dark-blue text-green py-4 px-5">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="profileIcon"></div>
+                    </div>
+                    <div class="col-10 text-start">
+                      <h5 class="text-white">Bhartesh Girmal</h5>
+                      <p class="text-white">Desginer</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p class="text-start text-gray">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Id aliquid ut quas temporibus maiores nostrum nulla,
+                        quia hic impedit dolore at exercitationem corrupti
+                        praesentium consectetur labore vel dolorum, dignissimos
+                        ad.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-wrapper py-4">
+              <div class="swiper-slide bg-dark-blue text-green py-4 px-5">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="profileIcon"></div>
+                    </div>
+                    <div class="col-10 text-start">
+                      <h5 class="text-white">Bhartesh Girmal</h5>
+                      <p class="text-white">Desginer</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p class="text-start text-gray">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Id aliquid ut quas temporibus maiores nostrum nulla,
+                        quia hic impedit dolore at exercitationem corrupti
+                        praesentium consectetur labore vel dolorum, dignissimos
+                        ad.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide bg-dark-blue text-green p-3 rounded-2">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-2">
+                      <div class="profileIcon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                    </div>
+                    <div class="col-lg-10 text-start">
+                      <h5 class="text-white">Bhartesh Girmal</h5>
+                      <p class="text-white">Desginer</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p class="text-start text-gray">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Id aliquid ut quas temporibus maiores nostrum nulla,
+                        quia hic impedit dolore at exercitationem corrupti
+                        praesentium consectetur labore vel dolorum, dignissimos
+                        ad.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide bg-dark-blue text-green p-3 rounded-2">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-2">
+                      <div class="profileIcon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                    </div>
+                    <div class="col-lg-10 text-start">
+                      <h5 class="text-white">Bhartesh Girmal</h5>
+                      <p class="text-white">Desginer</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p class="text-start text-gray">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Id aliquid ut quas temporibus maiores nostrum nulla,
+                        quia hic impedit dolore at exercitationem corrupti
+                        praesentium consectetur labore vel dolorum, dignissimos
+                        ad.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide bg-dark-blue text-green p-3 rounded-2">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-2">
+                      <div class="profileIcon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                    </div>
+                    <div class="col-lg-10 text-start">
+                      <h5 class="text-white">Bhartesh Girmal</h5>
+                      <p class="text-white">Desginer</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p class="text-start text-gray">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Id aliquid ut quas temporibus maiores nostrum nulla,
+                        quia hic impedit dolore at exercitationem corrupti
+                        praesentium consectetur labore vel dolorum, dignissimos
+                        ad.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide bg-dark-blue text-green p-3 rounded-2">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-2">
+                      <div class="profileIcon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                    </div>
+                    <div class="col-lg-10 text-start">
+                      <h5 class="text-white">Bhartesh Girmal</h5>
+                      <p class="text-white">Desginer</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p class="text-start text-gray">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Id aliquid ut quas temporibus maiores nostrum nulla,
+                        quia hic impedit dolore at exercitationem corrupti
+                        praesentium consectetur labore vel dolorum, dignissimos
+                        ad.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide bg-dark-blue text-green p-3 rounded-2">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-2">
+                      <div class="profileIcon">
+                        <i class="fa fa-user"></i>
+                      </div>
+                    </div>
+                    <div class="col-lg-10 text-start">
+                      <h5 class="text-white">Bhartesh Girmal</h5>
+                      <p class="text-white">Desginer</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p class="text-start text-gray">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Id aliquid ut quas temporibus maiores nostrum nulla,
+                        quia hic impedit dolore at exercitationem corrupti
+                        praesentium consectetur labore vel dolorum, dignissimos
+                        ad.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container mt-5 d-flex justify-content-center gap-3">
+              <i class="fa-solid fa-arrow-left prev"></i>
+              <i class="fa-solid fa-arrow-right next"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contactus-section text-center mt-5 mb-5">
+        <div class="container">
+          <span class="text-white text-uppercase main-text">Get Connected</span>
+          <h2 class="text-green fw-bold mb-5">Contact Me</h2>
+          <form
+            class="mx-auto py-5 px-4 rounded-3 mt-5 border-green"
+            style="max-width: 600px"
+          >
+            <div class="text-gray mb-4">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Name"
+              />
+            </div>
+            <div class="text-gray mb-4">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="text-gray mb-4">
+              <input
+                type="text"
+                class="form-control"
+                id="subject"
+                placeholder="Subject"
+              />
+            </div>
+            <div class="text-gray mb-4">
+              <textarea
+                class="form-control"
+                id="message"
+                placeholder="Message"
+                rows="4"
+              ></textarea>
+            </div>
+
+            <button
+              class="btn mybtn rounded-0 text-uppercase bg-green mt-3"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-section mt-3">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 d-flex justify-content-sm-start justify-content-md-start justify-content-center"
+          >
+            <a href=""
+              ><i class="fa-brands fa-github text-green mx-2 fs-5"></i
+            ></a>
+            <a href=""
+              ><i class="fa-brands fa-instagram text-green mx-2 fs-5"></i
+            ></a>
+            <a href=""
+              ><i class="fa-brands fa-linkedin text-green mx-2 fs-5"></i
+            ></a>
+            <a href=""><i class="fa fa-brand"></i></a>
+          </div>
+          <div class="col-lg-6 text-gray text-lg-end text-center">
+            <p class="text-gray">Copyright &copy; reserved @2024</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/888346bf48.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

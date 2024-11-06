@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positions</title>
+    <style>
+      .boxcontainer {
+        background-color: rgb(208, 208, 208);
+        border: 1px solid crimson;
+        width: 1000px;
+        margin: auto;
+        padding: 30px;
+        height: 2000px;
+      }
+      .box {
+        display: inline-block;
+        border: 2px solid rgb(175, 52, 52);
+        margin: 5px;
+        text-align: center;
+        width: 150px;
+        height: 150px;
+      }
+      .box h3 {
+        border: 2px solid goldenrod;
+        background-color: rgb(237, 66, 66);
+        border-radius: 5px;
+        padding: 6px;
+        text-align: center;
+      }
+      h3 {
+        background-color: darkslateblue;
+        color: wheat;
+        text-align: center;
+      }
+      #box3 {
+        position: relative;
+        top: 50px;
+        left: 100px;
+      }
+      #box4 {
+        position: absolute;
+        top: 50px;
+        left: 800px;
+      }
+      #box5 {
+        position: fixed;
+        bottom: 5px;
+        right: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxcontainer">
+      <h3>CSS Positioning</h3>
+      <div class="box" id="box1"><h3>Box Content1</h3></div>
+      <div class="box" id="box2"><h3>Box Content2</h3></div>
+      <div class="box" id="box3"><h3>Box Content3</h3></div>
+      <div class="box" id="box4"><h3>Box Content4</h3></div>
+      <div class="box" id="box5"><h3>Contact us</h3></div>
+    </div>
+  </body>
+</html>

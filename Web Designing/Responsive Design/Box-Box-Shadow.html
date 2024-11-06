@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box add Box Shadow</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        border: 2px solid navajowhite;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+      }
+
+      .card {
+        padding: 23px 12px;
+        margin: 23px 12px;
+        border: 1px solid crimson;
+        background-color: rgb(72, 255, 255);
+        border-radius: 20px;
+        display: block; /* Make card a flex container */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        text-align: center;
+      }
+
+      .card h2 {
+        text-shadow: 1px 1px 2px red;
+      }
+
+      #card-1 {
+        box-shadow: 8px 8px rosybrown;
+      }
+      #card-2 {
+        box-shadow: -8px -8px rosybrown;
+      }
+      #card-3 {
+        box-shadow: 8px 8px 8px rosybrown;
+      }
+      #card-4 {
+        box-shadow: 8px 8px 8px 8px rosybrown;
+      }
+      #card-5 {
+        box-shadow: 8px 8px rgb(95, 68, 68), 8px 8px rgb(71, 49, 211);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" id="card-1">
+        <h2>Card1</h2>
+        <p>X offset and Y offset Shadow</p>
+      </div>
+      <div class="card" id="card-2">
+        <h2>Card2</h2>
+        <p>X offset and Y offset Shadow Negative</p>
+      </div>
+      <div class="card" id="card-3">
+        <h2>Card3</h2>
+        <p>X offset and Y offset Shadow with Blur Radius.</p>
+      </div>
+      <div class="card" id="card-4">
+        <h2>Card4</h2>
+        <p>X offset and Y offset Shadow with spread radius</p>
+      </div>
+      <div class="card" id="card-5">
+        <h2>Card5</h2>
+        <p>Shadow with Diffrent colors</p>
+      </div>
+    </div>
+  </body>
+</html>

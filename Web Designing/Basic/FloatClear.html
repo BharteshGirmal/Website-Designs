@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        width: 900px;
+        margin: 50px auto;
+        border: 1px solid black;
+      }
+
+      .item {
+        border: 2px solid grey;
+        margin: 12px 12px;
+        padding: 12px;
+        background: rgb(226, 219, 219);
+      }
+
+      #fruit {
+        float: left;
+        width: calc(48% - 24px); /* Adjust width for margins */
+      }
+
+      #computer {
+        float: left;
+        width: calc(48% - 24px); /* Adjust width for margins */
+      }
+
+      #stationary {
+        clear: both; /* Ensure it starts below the floated elements */
+        width: calc(100% - 24px); /* Full width */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="fruit" class="item">
+        <h3>Fruits</h3>
+        <p id="fruitpara" class="para">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
+          facilis consequatur? Temporibus placeat vero neque alias provident
+          unde ab ullam. Dolorum doloremque aliquam optio molestias ducimus
+          praesentium. Autem eaque neque sequi, beatae quia, impedit minima
+          quasi ex sapiente, optio dolore.
+        </p>
+      </div>
+      <div id="computer" class="item">
+        <h3>Computers</h3>
+        <p id="computerpara" class="para">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
+          facilis consequatur? Temporibus placeat vero neque alias provident
+          unde ab ullam. Dolorum doloremque aliquam optio molestias ducimus
+          praesentium. Autem eaque neque sequi, beatae quia, impedit minima
+          quasi ex sapiente, optio dolore.
+        </p>
+      </div>
+      <div id="stationary" class="item">
+        <h3>Stationary</h3>
+        <p id="stationarypara" class="para">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
+          facilis consequatur? Temporibus placeat vero neque alias provident
+          unde ab ullam. Dolorum doloremque aliquam optio molestias ducimus
+          praesentium. Autem eaque neque sequi, beatae quia, impedit minima
+          quasi ex sapiente, optio dolore.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

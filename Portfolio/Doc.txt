@@ -1,0 +1,6 @@
+Bootstrap classes :
+
+background  :     bg-danger
+padding     :     p-(numnber), py, px
+gap         :     gap-(number)
+

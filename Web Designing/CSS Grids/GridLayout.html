@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout</title>
+    <style>
+      .container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas:
+          "Home Home Home Home" "Aside Section Section Section"
+          "Footer Footer Footer Footer";
+      }
+      #Home {
+        grid-area: Home;
+      }
+      #Aside {
+        grid-area: Aside;
+      }
+      #Section {
+        grid-area: Section;
+      }
+      #Footer {
+        grid-area: Footer;
+      }
+      .item {
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: oldlace;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item" id="Home"><h1>Home Section</h1></div>
+      <div class="item" id="Aside">
+        <h2>Aside Section</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, odit
+          laboriosam! Aperiam temporibus atque, consequuntur veniam perspiciatis
+          architecto nobis doloribus alias cum optio blanditiis magnam in natus
+          soluta est suscipit quam ex quas saepe. Pariatur architecto ab,
+          laboriosam a tempore necessitatibus voluptates ratione cumque tempora
+          vel. Est, corrupti. Perferendis, aut.
+        </p>
+      </div>
+      <div class="item" id="Section">
+        <h2>Other Section</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+          distinctio optio sit maiores vel maxime assumenda asperiores unde,
+          labore, natus pariatur! Autem officia cumque repellat, ducimus dolores
+          voluptas expedita. Tempora accusamus nostrum facere dolorum minima
+          placeat libero suscipit, quos dignissimos repellendus laboriosam
+          similique fugit, aspernatur magni provident illo. Enim deserunt at
+          debitis voluptatem, culpa quae harum officiis ipsum odit laboriosam
+          consectetur molestias amet necessitatibus cupiditate ut consequuntur
+          maiores error velit laborum quos optio non aliquid? Exercitationem
+          aliquid placeat tempore facere in? Non ab pariatur voluptatem cum,
+          suscipit deserunt explicabo dolor odio quam, temporibus reprehenderit
+          illum facere animi inventore quo atque?
+        </p>
+      </div>
+      <div class="item" id="Footer">
+        <h2>Footer Section</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
+          deserunt.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+#navbar {
+      flex-direction: column;
+}
+
+#navbar img {
+      height: 150px;
+}
+
+#navbar ul {
+      justify-content: space-evenly;
+}
+
+#navbar ul li a {
+      padding: 6px;
+      font-size: 12px;
+}
+
+#home {
+      display: block;
+      padding: 0px;
+      margin: 0px;
+      padding: 10px 30px;
+      width: 98%;
+      height: auto;
+}
+
+#home p {
+      font-size: 20px;
+}
+
+.h-primary {
+      font-size: 28px;
+}
+
+#home .btn {
+      display: block;
+      margin: auto;
+}
+
+.services {
+      flex-direction: column;
+}
+
+.service-container {
+      height: auto;
+      z-index: -2;
+}
+
+.services .box {
+      padding: 0;
+      padding: 10px 10px;
+      width: 90%;
+      margin: 10px;
+
+}
+
+#client-section {
+      height: auto;
+}
+
+#clients {
+      /* display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 20px; */
+      flex-wrap: wrap;
+      z-index: -1;
+}
+
+.client-item {
+      height: 140px;
+}
+
+.contact-sectoin {
+      z-index: -4;
+
+}
+
+#contact {
+      width: 90%;
+      /* Adjust width to be responsive */
+      padding: 15px;
+      /* Reduce padding for smaller screens */
+      z-index: -1;
+}
+
+#contact .form-group input {
+      width: 100%;
+      /* Make inputs full width */
+      margin: 10px 0;
+      /* Adjust margins for better spacing */
+}
+
+#contact .form-group label {
+      margin: 10px 0;
+      /* Adjust label margins */
+}

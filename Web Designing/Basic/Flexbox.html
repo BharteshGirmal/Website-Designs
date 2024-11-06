@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .container {
+        background-color: rgb(237, 216, 173);
+        text-align: center;
+        padding: 20px;
+        border: 2px solid gray;
+        border-radius: 50px;
+        height: 544px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+      }
+      .item {
+        background-color: rgb(165, 171, 159);
+        padding: 10px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        margin: 10px;
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+      }
+
+      #item-1 {
+        order: 2;
+        /* order defines the order of flex item */
+        flex-grow: 2;
+        /* flex grow define the size of flex-item when screen size increases */
+        /* flex-basis: 100px; */
+        /* wehn flex-direction set to row then flex-basis controls the width of flex-item */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox Containers</h1>
+    <div class="container">
+      <div class="item" id="item-1">Flexbox1</div>
+      <!-- <div class="item" id="item-2">Flexbox2</div> -->
+      <div class="item" id="item-3">Flexbox3</div>
+      <div class="item" id="item-4">Flexbox4</div>
+      <div class="item" id="item-5">Flexbox5</div>
+      <div class="item" id="item-6">Flexbox6</div>
+    </div>
+  </body>
+</html>

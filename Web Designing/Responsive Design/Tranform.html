@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transfrom Property</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      header {
+        background-color: darkblue;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        color: whitesmoke;
+      }
+      .container {
+        border: 1px solid black;
+        background-color: beige;
+        padding: 50px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .items {
+        width: 100px;
+        height: 100px;
+        border: 1px solid darkslateblue;
+        box-shadow: 4px 4px 5px red;
+        border-radius: 20px;
+        padding: 20px;
+        background-color: brown;
+        color: wheat;
+        align-content: center;
+      }
+      #item-1:hover {
+        transition: all 3s ease-in-out 0.5s;
+        transform: rotate(360deg);
+      }
+      #item-2:hover {
+        transition: all 3s ease-in-out 0.5s;
+        transform: skew(-25deg);
+      }
+      #item-3:hover {
+        transition: all 3s ease-in-out 0.5s;
+        transform: scale(2);
+        background-color: lightcoral;
+        color: red;
+      }
+      #item-4:hover {
+        transition: all 3s ease-in-out 0.5s;
+        transform: translateX(125px);
+      }
+      #item-5:hover {
+        transition: all 3s ease-in-out 0.5s;
+        transform: translateY(125px);
+      }
+      #item-6:hover {
+        transition: all 3s ease-in-out 0.5s;
+        transform: translateZ(-125px);
+      }
+      #item-7:hover {
+        transition: all 3s ease-in-out 0.5s;
+        transform: translate(123px, 123px);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Transfrom Animation Property in CSS</h1>
+    </header>
+    <div class="container">
+      <div class="items" id="item-1"><h2>Rotate Property</h2></div>
+      <div class="items" id="item-2"><h2>Skew Property</h2></div>
+      <div class="items" id="item-3"><h2>Scale Property</h2></div>
+      <div class="items" id="item-4"><h2>Translate X</h2></div>
+      <div class="items" id="item-5"><h2>Translate Y</h2></div>
+      <div class="items" id="item-6"><h2>Translate Z</h2></div>
+      <div class="items" id="item-7"><h2>Translate</h2></div>
+    </div>
+  </body>
+</html>

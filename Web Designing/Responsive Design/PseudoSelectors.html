@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Selectotrs and nth Child Selectors</title>
+    <style>
+      input {
+        display: block;
+        margin: 12px;
+      }
+      header,
+      .container {
+        display: block;
+        width: 300px;
+        margin: auto;
+      }
+
+      /* psedo Selectors  */
+
+      input[type="text"] {
+        padding: 20px;
+        border: 2px solid red;
+      }
+      a[target] {
+        color: red;
+      }
+      input[type="file"] {
+        background-color: orange;
+        border: 1px solid rebeccapurple;
+      }
+
+      li {
+        border: 1px solid red;
+        padding: 10px;
+        text-align: center;
+        list-style: none;
+        border-radius: 15px;
+        margin: 10px auto;
+      }
+
+      .item:nth-child(odd) {
+        background-color: aqua;
+      }
+      .item:nth-child(even) {
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Pseudo Selectors</h1>
+    </header>
+    <div class="container">
+      <form action="noaction">
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter the User name"
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter you Passwoprd"
+        />
+
+        <input type="email" name="email" id="email" />
+        <input type="file" name="fileinput" id="fileinput" />
+        <input type="checkbox" name="checkbox" id="checkbox" />
+        <input type="submit" value="Submit" />
+      </form>
+      <ul>
+        <li class="item" id="item-1">
+          <a href="http://google.com" target="_blank">Go to Google</a>
+        </li>
+        <li class="item" id="item-2">Items-2</li>
+        <li class="item" id="item-3">Items-3</li>
+        <li class="item" id="item-4">Items-4</li>
+        <li class="item" id="item-5">Items-5</li>
+        <li class="item" id="item-6">Items-6</li>
+      </ul>
+    </div>
+  </body>
+</html>

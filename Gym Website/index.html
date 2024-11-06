@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <title>ABS Fitness</title>
+    <style>
+      body {
+        font-family: "Lobster", sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url("./img/wp5333567-fitness-wallpaper-hd.jpg");
+      }
+      .left {
+        display: inline-block;
+        /* border: 1px solid red; */
+        position: relative;
+        left: 34px;
+        top: 18px;
+      }
+      .mid {
+        display: block;
+        width: 40%;
+        margin: -45px auto;
+        /* border: 1px solid yellow; */
+      }
+
+      .mid div {
+        line-height: 30px;
+      }
+      .right {
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 45px;
+        /* border: 1px solid blue; */
+      }
+
+      .left img {
+        display: block;
+        margin: auto;
+        filter: invert(100%);
+        border-radius: 100%;
+        width: 70px;
+      }
+
+      .navbar {
+        display: inline-block;
+      }
+      .navbar li {
+        display: inline-block;
+        list-style: none;
+      }
+      .navbar li a {
+        color: wheat;
+        padding: 34px 24px;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      .navbar li a:hover,
+      .navbar li a .active {
+        color: rgb(218, 153, 33);
+        text-decoration: underline;
+      }
+      .btn {
+        font-family: "Lobster", sans-serif;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        padding: 6px 12px;
+        margin: 0 10px;
+        border-radius: 15px;
+      }
+      .btn:hover {
+        background-color: rgb(205, 200, 200);
+        color: black;
+      }
+      .container {
+        border: 1px solid lightgray;
+        border-radius: 30px;
+        width: 33%;
+        padding: 70px;
+        margin: 100px 40px;
+      }
+
+      .form-group {
+        display: block;
+        margin: 10px auto;
+      }
+      .form-group h1 {
+        text-align: center;
+      }
+      .form-group input {
+        font-family: "Lobster", sans-serif;
+        display: block;
+        margin: auto;
+        padding: 10px;
+        width: 100%;
+        color: black;
+        border-radius: 10px;
+        background-color: #cdcdcd;
+      }
+      .form-group label {
+        display: inline-block;
+        margin: auto;
+      }
+
+      .form-group button {
+        display: block;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <img src="./img/GymLogo.jfif" alt="" />
+        <div class="logotext">ABS Fitness</div>
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="btn">Call us</button>
+        <button class="btn">Email us</button>
+      </div>
+    </header>
+
+    <div class="container">
+      <form action="noaction">
+        <div class="form-group">
+          <h1>Join us Now</h1>
+        </div>
+        <div class="form-group">
+          <label for="name">First Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your firstname"
+          />
+        </div>
+        <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input
+            type="text"
+            name="name"
+            id="lastname"
+            placeholder="Enter your lastname"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="city">City</label>
+          <input
+            type="text"
+            name="name"
+            id="city"
+            placeholder="Enter your city"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="area">Area</label>
+          <input
+            type="text"
+            name="name"
+            id="area"
+            placeholder="Enter your area"
+          />
+        </div>
+        <div class="form-group">
+          <button class="btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

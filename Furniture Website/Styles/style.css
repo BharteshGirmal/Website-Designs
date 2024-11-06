@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lobster&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+:root {
+      --green-color: #18311E;
+      --orange-color: #EA7527;
+      --gray-color: #F2F1EF;
+      --black-color: #333;
+}
+
+.main-section {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+}
+
+.side-bar {
+      height: 100vh;
+      width: 6rem;
+      background-color: var(--green-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.Furniturelogo {
+      display: block;
+      margin: 30px auto;
+      width: 60px;
+      aspect-ratio: 1;
+      object-fit: cover;
+      filter: invert(100%);
+}
+
+.social-icons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      color: var(--gray-color);
+      font-size: 1.5rem;
+}
+
+.fa-brands {
+      font-size: 1.15rem;
+      color: white;
+}
+
+.working-section {
+      height: 100vh;
+      width: calc(100% - 6rem);
+      background-color: var(--gray-color);
+}
+
+.navbar-section {
+      height: 12vh;
+      width: 100%;
+      background-color: var(--gray-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-inline: 5rem;
+}
+
+li {
+      list-style: none;
+}
+
+a {
+      text-decoration: none;
+}
+
+.actions {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin: 2px;
+}
+
+.fa-solid {
+      font-size: 1.2rem;
+      color: var(--green-color);
+}
+
+.navlist {
+      display: flex;
+      align-items: center;
+      gap: 6rem;
+}
+
+.item {
+      font-size: 1.15rem;
+      font-family: "DM Serif Display", serif;
+      color: var(--green-color);
+      font-weight: 600;
+      letter-spacing: .05rem;
+}
+
+.hero-section {
+      height: calc(100% - 12vh);
+      width: 100%;
+      display: flex;
+      padding-inline: 5rem;
+      position: relative;
+      overflow: hidden;
+}
+
+h1 {
+      font-size: 5.5rem;
+      color: var(--green-color);
+      font-family: "DM Serif Display", serif;
+      line-height: 6rem;
+      letter-spacing: 0.2rem;
+
+}
+
+p {
+      font-size: 1rem;
+      max-width: 500px;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+
+}
+
+button {
+      padding: 0.9rem 1.6rem;
+      font-size: 1rem;
+      border: none;
+      background-color: var(--green-color);
+      border-radius: 5px;
+      width: inherit;
+      color: #fff;
+      width: 300px;
+      transition: transform 0.5s ease-out;
+}
+
+button:hover {
+      transform: scale(1.1);
+}
+
+.detail {
+      margin: 2rem;
+}
+
+.content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
+
+.swiper {
+      flex: 1;
+      position: relative;
+}
+
+.swiper-slide img {
+      width: 32vw;
+      float: right;
+}
+
+.swiper::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      inset: 6rem;
+      background-color: var(--orange-color);
+      border-radius: 50%;
+}
+
+.swiper::after {
+      content: '';
+      position: absolute;
+      inset: 2rem;
+      border: 1px solid var(--green-color);
+      opacity: 0.8;
+      border-radius: 50%;
+}
+
+.controls {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      background: var(--green-color);
+      height: 10rem;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      padding: 3rem;
+      position: absolute;
+      top: 50%;
+      right: -5%;
+}
+
+.fa-angle-right,
+.fa-angle-left {
+      font-size: 1.7rem;
+      color: white;
+}
+
+.play {
+      position: absolute;
+      top: 7%;
+      left: 20%;
+      background-color: var(--green-color);
+      padding: 1.6rem 2rem;
+      border-radius: 50%;
+      z-index: 1;
+      transition: transform 0.5s ease;
+}
+
+.fa-play {
+      color: white;
+}
+
+.play:hover {
+      transform: scale(1.15) translateY(-15%);
+}
+
+.play::before {
+      content: '';
+      inset: 0;
+      background: var(--green-color);
+      opacity: 0.5;
+      border-radius: 50%;
+      position: absolute;
+      z-index: -1;
+      animation: pulse 3s ease-out infinite;
+
+}
+
+.play:hover::before {
+      animation: none;
+}
+
+@keyframes pulse {
+      100% {
+            opacity: 0;
+            transform: scale(1.8);
+      }
+}
+
+/* Aside section  */
+
+/* navbar section  */
+
+/* hero section  */
+
+/* swiper section  */
+
+/* effects section  */
