@@ -74,10 +74,11 @@
 .image-container {
       width: 30rem;
       aspect-ratio: 1;
+      padding: 1rem;
       border-radius: 50%;
       border-top: 0.5rem solid white;
       border-bottom: 0.5rem solid white;
-      background: url('./Images/BharteshLogo.jfif');
+      background: url('./Images/BharteshLogo-removebg-preview.png');
       background-position: center;
       background-size: 100%;
       box-shadow: 0 0 0.9rem white, inset 0 0 0.9rem white, 0 0 1.5rem var(--green-color), inset 0 0 1.5rem var(--green-color);
@@ -110,9 +111,32 @@ img {
 #aboutUsImg {
       display: block;
       margin: auto;
+      background-color: ;
       height: 25rem;
       border-radius: 50%;
       box-shadow: 0 0 20px rgba(28, 31, 31, 0.8);
+}
+
+.aboutme {
+      width: 25rem;
+      aspect-ratio: 1;
+      margin: auto;
+      border-radius: 50%;
+      background-color: var(--gray-color);
+      background: url('./Images/Bhartesh2.png');
+      background-position: center;
+      background-size: 100%;
+}
+
+.certificate-logo {
+      width: 25rem;
+      aspect-ratio: 1;
+      margin: auto;
+      border-radius: 50%;
+      background-color: var(--gray-color);
+      background: url('./Images/Bhartesh3.png');
+      background-position: center;
+      background-size: 100%;
 }
 
 #crtImg {
