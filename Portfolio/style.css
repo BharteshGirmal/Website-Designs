@@ -32,7 +32,7 @@
 }
 
 .border-green {
-      border: 1px solid var(--green-color);
+      color: var(--green-color);
 }
 
 .bg-dark-blue {
@@ -98,6 +98,10 @@ h1 {
       font-size: 0.8rem;
 }
 
+.main-text-secondary {
+      letter-spacing: 0.2rem;
+}
+
 img {
       max-width: 500px;
       height: auto;
@@ -106,6 +110,22 @@ img {
 #aboutUsImg {
       display: block;
       margin: auto;
+      height: 25rem;
+      border-radius: 50%;
+      box-shadow: 0 0 20px rgba(28, 31, 31, 0.8);
+}
+
+#crtImg {
+      display: block;
+      margin: auto;
+      height: auto;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      box-shadow: 0 0 20px rgba(28, 31, 31, 0.8);
+}
+
+.itemlist li {
+      list-style: square;
 }
 
 .glow {
@@ -122,6 +142,12 @@ img {
       z-index: -1;
       border-radius: 50%;
       filter: blur(85px);
+}
+
+
+.glowCrt {
+      box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+      /* Slight glow for effect */
 }
 
 li {
@@ -144,30 +170,21 @@ a {
 }
 
 
-.glowCard {
-      position: relative;
-
-
-}
-
-.glowCard::before {
-      content: '';
-      position: absolute;
-      background-color: var(--green-color);
-      inset: 4rem;
-      z-index: -1;
-      border-radius: 10%;
-      filter: blur(85px);
-}
-
-
 .card-hover:hover * {
       transition: all 0.5s ease-in-out 0.1s;
       background-color: var(--green-color);
-      border: 1px solid wheat;
       color: black !important;
-      border-radius: 15px;
-      transform: scale(1.1);
+      border-radius: inherit;
+      transform: scale(1.05);
+}
+
+.hover-effect:hover {
+      transition: all 0.5s ease-in-out 0.1s;
+      border: 1px solid var(--green-color);
+      border-radius: 20px !important;
+      /* background-color: var(--gray-color) !important; */
+      /* color: black !important; */
+      transform: scale(1.2);
 }
 
 .image-container2 {
@@ -196,6 +213,39 @@ form {
       overflow: hidden;
 }
 
+.certificate-img {
+      width: 4rem;
+      aspect-ratio: 1;
+      /* Replace wheat with a neutral color */
+      border-radius: 50%;
+      overflow: hidden;
+}
+
+.certificate-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: invert(100%);
+}
+
+.text-gray {
+      color: #aaa;
+}
+
+/* Certificate Logo Styling */
+.certificate-logo img {
+      max-width: 80%;
+      height: auto;
+      display: block;
+      margin: auto;
+}
+
+.certification {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
+
 .profileIcon i {
       font-size: 1.8rem;
       display: flex;
@@ -221,6 +271,24 @@ form {
       border-radius: 50%;
 
 }
+
+
+@media (max-width: 992px) {
+      .certificate-logo img {
+            max-width: 60%;
+      }
+
+      .certificate-img {
+            width: 3rem;
+            height: 3rem;
+      }
+
+      h6 {
+            font-size: 1rem;
+            /* Adjust heading size for better readability */
+      }
+}
+
 
 @media (min-width: 768px) {
       .image-container2 {
