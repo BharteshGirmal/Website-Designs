@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* Global Styles */
+* {
+  font-family: "Poppins", sans-serif;
+  /* border: 1px dashed wheat; */
+}
+
+:root {
+  --green-color: #DFFE02;
+  --gray-color: #898989;
+  --darkBlue-color: #1a1a1c;
+}
+
+/* General Card Styles */
+.card img {
+  display: block;
+  margin: auto;
+}
+
+.card {
+  padding: 20px;
+}
+
+.revertImg {
+  filter: invert(100%);
+}
+
+.bg-green {
+  background-color: var(--green-color) !important;
+}
+
+.border-green {
+  color: var(--green-color) !important;
+}
+
+.bg-dark-blue {
+  background-color: var(--darkBlue-color) !important;
+}
+
+.bg-dark-blue .card {
+  background-color: var(--darkBlue-color) !important;
+}
+
+
+.text-green {
+  color: var(--green-color) !important;
+}
+
+.text-gray {
+  color: var(--gray-color) !important;
+}
+
+/* Navbar and Buttons */
+.navbar-logo {
+  width: 3rem !important;
+}
+
+/* Force navbar to always be expanded on small screens */
+.navbar-custom .navbar-collapse {
+  display: flex !important;
+  /* Prevent collapse */
+}
+
+
+.mybtn {
+  border: 2px solid var(--green-color) !important;
+  padding: 0.5rem 1.6rem;
+}
+
+.mybtn:hover {
+  background-color: transparent !important;
+  color: var(--green-color) !important;
+}
+
+
+.navbar-toggler-icon {
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23DFFE02' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+
+/* Hero Section */
+.hero-section {
+  min-height: 85vh !important;
+}
+
+.image-container {
+  width: 30rem;
+  aspect-ratio: 1;
+  padding: 1rem;
+  border-radius: 50%;
+  border-top: 0.5rem solid white;
+  border-bottom: 0.5rem solid white;
+  background: url('./Images/BharteshLogo-removebg-preview.png');
+  background-position: center;
+  background-size: 100%;
+  box-shadow: 0 0 0.9rem white, inset 0 0 0.9rem white, 0 0 1.5rem var(--green-color), inset 0 0 1.5rem var(--green-color);
+}
+
+/* Text Styles */
+h1 {
+  font-size: 4rem !important;
+  font-family: "Merriweather Sans", sans-serif !important;
+}
+
+.para {
+  max-width: 500px;
+}
+
+.main-text {
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.main-text-secondary {
+  letter-spacing: 0.2rem;
+}
+
+img {
+  max-width: 500px;
+  height: auto;
+}
+
+/* About Us Section */
+#aboutUsImg {
+  display: block;
+  margin: auto;
+  height: 25rem;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(28, 31, 31, 0.8);
+}
+
+.aboutme,
+.certificate-logo {
+  width: 30rem;
+  aspect-ratio: 1;
+  margin: auto;
+  border-radius: 50%;
+  background-color: var(--gray-color);
+  background-position: center;
+  background-size: 100%;
+}
+
+.aboutme {
+  background: url('./Images/bhartesh2.png');
+}
+
+.certificate-logo {
+  background: url('./Images/bhartesh2.png');
+}
+
+
+#crtImg {
+  display: block;
+  margin: auto;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(28, 31, 31, 0.8);
+}
+
+/* List and Glow Effects */
+.itemlist li {
+  list-style: square;
+}
+
+.glow {
+  position: relative;
+}
+
+.glow::before {
+  content: '';
+  position: absolute;
+  background-color: var(--green-color);
+  inset: 6rem;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(85px);
+}
+
+.glowCrt {
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+
+/* Link Styles */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hover Effects */
+.card-hover:hover * {
+  transition: all 0.5s ease-in-out 0.1s;
+  background-color: var(--green-color);
+  color: black !important;
+  border-radius: inherit;
+  transform: scale(1.05);
+}
+
+.hover-effect:hover {
+  transition: all 0.5s ease-in-out 0.1s;
+  border: 1px solid var(--green-color);
+  border-radius: 20px !important;
+  transform: scale(1.2);
+}
+
+/* Image Container */
+.image-container2 {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+form {
+  width: 33rem;
+}
+
+/* Profile and Certificate Icons */
+.profileIcon,
+.certificate-img {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profileIcon {
+  border: 1px solid var(--green-color);
+  width: 3rem;
+}
+
+.certificate-img {
+  width: 4rem;
+  aspect-ratio: 1;
+}
+
+.certificate-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: invert(100%);
+}
+
+.certification {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profileIcon i {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green-color);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Swiper Styles */
+.swiper-slide:hover * {
+  transition: all 0.5s ease-in-out 0.1s;
+  background-color: var(--green-color);
+  color: black !important;
+}
+
+.prev,
+.next {
+  background-color: var(--green-color);
+  font-size: 1.2rem;
+  padding: 0.5em 0.6em;
+  border-radius: 50%;
+}
+
+
+.certificate-section .education-timeline {
+  position: relative;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #00d2be;
+  border: 2px solid #1a1a1a;
+  position: relative;
+}
+
+.line {
+  width: 3px;
+  height: 40px;
+  background-color: #00d2be;
+}
+
+.timeline-item .line {
+  position: absolute;
+  top: 10px;
+  left: 7px;
+}
+
+.timeline-item:last-child .line {
+  display: none;
+}
+
+/* Add hover effect for timeline */
+.timeline-item:hover .dot {
+  background-color: #ff9800;
+  transform: scale(1.1);
+}
+
+.glowCrt:hover {
+  background-color: #1a1a1a;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+
+  /* Adjusting certificate logo on large screens */
+  .certificate-logo {
+    max-width: 70%;
+  }
+
+  /* Swiper styles for medium screens */
+  .swiper-slide {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  /* Adjusting the image size and certificate image size for medium screens */
+  .certificate-logo {
+    max-width: 60%;
+  }
+
+  .certificate-img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  /* Adjust profile and certification layout for smaller screens */
+  .profileIcon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .certificate-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust the navbar items */
+  .navbar-custom .navbar-collapse {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Hero section adjustment */
+  .hero-section {
+    min-height: 70vh;
+  }
+
+  h1 {
+    font-size: 3rem !important;
+  }
+
+  .certificate-logo {
+    max-width: 100%;
+    height: 100% !important;
+  }
+
+  .image-container {
+    width: 20rem;
+    margin: 20px;
+  }
+
+  /* Adjust swiper image size */
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Adjust the text section layout */
+  .main-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 680px) {
+
+  /* Adjust h1 font size for very small screens */
+  h1 {
+    font-size: 2.8rem !important;
+  }
+
+  .certificate-logo {
+    max-width: 100%;
+    height: 100% !important;
+  }
+
+  .hero-section .container .row {
+    margin: auto;
+  }
+
+  /* Adjust the image container */
+  .image-container {
+    width: 18rem;
+    margin: 20px;
+  }
+
+  /* Adjust about section image */
+  #aboutUsImg {
+    height: 18rem;
+  }
+
+  /* Adjust general form width */
+  form {
+    width: 100%;
+  }
+
+  /* Adjust text size */
+  .main-text {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Further adjustments for small mobile screens */
+  h1 {
+    font-size: 2.4rem !important;
+  }
+
+  .certificate-logo {
+    max-width: 100%;
+    max-height: 100% !important;
+    aspect-ratio: 1;
+  }
+
+  .para {
+    font-size: 0.85rem;
+  }
+
+  /* Adjusting card layout for smaller screens */
+  .card {
+    padding: 15px;
+  }
+
+  /* Navbar adjustments */
+  .navbar-logo {
+    width: 2.5rem !important;
+  }
+
+  .navbar-toggler-icon {
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23DFFE02' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+
+  /* Adjust timeline for small screens */
+  .timeline-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .line {
+    height: 20px;
+  }
+
+  .timeline-item .line {
+    position: relative;
+    left: 0;
+  }
+}
