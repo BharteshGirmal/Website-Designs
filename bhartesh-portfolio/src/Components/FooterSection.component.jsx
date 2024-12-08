@@ -8,13 +8,13 @@ const FooterSection = () => {
         <div className="row">
           {/* Social Media Links Section */}
           <div className="col-lg-6 d-flex justify-content-lg-start justify-content-center text-lg-start text-center mb-3 mb-lg-0">
-            <a href="#" className="text-green mx-2">
+            <a href="/" className="text-green mx-2">
               <i className="fa-brands fa-apple fs-5"></i>
             </a>
-            <a href="#" className="text-green mx-2">
+            <a href="/" className="text-green mx-2">
               <i className="fa-brands fa-windows fs-5"></i>
             </a>
-            <a href="#" className="text-green mx-2">
+            <a href="/" className="text-green mx-2">
               <i className="fa-brands fa-android fs-5"></i>
             </a>
           </div>

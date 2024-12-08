@@ -9,7 +9,7 @@ import ProjectSection from './Components/ProjectSection.component';
 import ContactSection from './Components/ContactusSection.component';
 import FooterSection from './Components/FooterSection.component';
 import WorkSection from './Components/WorkSection.component';
-import { Route, Router, Routes } from 'react-router-dom';
+import { Route,  Routes } from 'react-router-dom';
 
 function App() {
   return (

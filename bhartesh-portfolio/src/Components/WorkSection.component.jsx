@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // AOS Styles
-import MyContextAPI, { ContextAPI } from "../Context/ContextApi";
+import { ContextAPI } from "../Context/ContextApi";
 
 // Reusable ExperienceCard Component
 const ExperienceCard = ({ title, role, duration, items }) => {
