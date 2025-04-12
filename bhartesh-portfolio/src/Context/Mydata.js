@@ -94,16 +94,6 @@ export const projects = [
     description: `Monster Rolodex is a React-based site for searching monster cards, styled with Bootstrap. It offers a simple, responsive way to browse and find monster cards easily on any device.`,
     previewLink: "https://monster-rolodex-bhartesh.netlify.app",
   },
-
-  {
-    title: "Furniture Website",
-    imageSrc:
-      "https://github.com/BharteshGirmal/Website-Designs/blob/main/Portfolio/Images/furniture.png?raw=true",
-    altText: "E-Quiz Web Application",
-    description: `This Furniture Website is designed with CSS animations and transitions, offering an eye-catching layout that enhances user experience. The smooth effects and engaging design make browsing furniture collections enjoyable and visually appealing.`,
-    previewLink: "https://bhartesh-furniture-site.netlify.app",
-  },
-
   {
     title: "E-Quiz Web Application",
     imageSrc:
