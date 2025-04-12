@@ -51,7 +51,7 @@ const ContactSection = () => {
                     href="mailto:girmalbhartesh9178@example.com"
                     className="text-white text-decoration-none"
                   >
-                    girmalbhartesh9178@example.com
+                    girmalbhartesh9178@gmail.com
                   </a>
                 </p>
               </div>

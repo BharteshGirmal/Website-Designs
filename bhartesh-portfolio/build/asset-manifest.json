@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1202c096.css",
+    "main.js": "/static/js/main.5fa76014.js",
+    "static/js/453.b512aaef.chunk.js": "/static/js/453.b512aaef.chunk.js",
+    "static/media/bhartesh2.png": "/static/media/bhartesh2.63667bbaaab6e6e3e358.png",
+    "static/media/BharteshLogo-removebg-preview.png": "/static/media/BharteshLogo-removebg-preview.51f4a46cc70aa5479ade.png",
+    "index.html": "/index.html",
+    "main.1202c096.css.map": "/static/css/main.1202c096.css.map",
+    "main.5fa76014.js.map": "/static/js/main.5fa76014.js.map",
+    "453.b512aaef.chunk.js.map": "/static/js/453.b512aaef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1202c096.css",
+    "static/js/main.5fa76014.js"
+  ]
+}
