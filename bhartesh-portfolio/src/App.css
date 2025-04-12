@@ -173,13 +173,46 @@ img {
   background-size: 100%;
 }
 
+
+
 .aboutme {
   background: url('./Images/bhartesh2.png');
 }
 
-.certificate-logo {
-  background: url('./Images/bhartesh2.png');
+.certificates-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* 1 column for small screens */
+  gap: 1.5rem;
+  margin-block: 3rem;
+  padding-inline: 1rem;
 }
+
+@media (min-width: 576px) {
+  .certificates-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns for medium screens */
+    gap: 2rem;
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .certificates-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns for large screens */
+    gap: 2.5rem;
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .certificates-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns for extra-large screens */
+  }
+}
+
 
 #crtImg {
   display: block;

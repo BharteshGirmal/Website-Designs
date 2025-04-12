@@ -31,24 +31,17 @@ const CertificateSection = () => {
       id="certification-section"
     >
       <h2 className="text-green fw-bold mb-5">Certifications</h2>
-      <div className="container gap-5 gap-lg-0 my-5">
-        <div className="row">
-          <div className="col-lg-6 mb-4">
-            <div className="certificate-logo glow"></div>
-          </div>
-          <div className="col-lg-6 mb-4 certification">
-            {certificates.map((cert, index) => (
-              <CertificateCard
-                key={index}
-                imgSrc={cert.imgSrc}
-                altText={cert.altText}
-                title={cert.title}
-                institution={cert.institution}
-                period={cert.period}
-              />
-            ))}
-          </div>
-        </div>
+      <div className="certificates-wrapper">
+        {certificates.map((cert, index) => (
+          <CertificateCard
+            key={index}
+            imgSrc={cert.imgSrc}
+            altText={cert.altText}
+            title={cert.title}
+            institution={cert.institution}
+            period={cert.period}
+          />
+        ))}
       </div>
     </section>
   );
