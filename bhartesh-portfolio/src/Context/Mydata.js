@@ -53,6 +53,22 @@ export const certificates = [
 // Personal Projects
 export const projects = [
   {
+    title: "React Tutorial App",
+    imageSrc:
+      "https://github.com/BharteshGirmal/Website-Designs/blob/main/bhartesh-portfolio/src/Images/E-Commerce.png?raw=true",
+    altText: "React Tutorial App",
+    description: `This is a responsive E-Commerce web application built using React and React-Bootstrap. It features a user-friendly interface that works seamlessly across devices. Users can browse products, view details, filter items, and experience a smooth checkout process.`,
+    previewLink: "https://react-tutorial-bhartesh.netlify.app/",
+  },
+  {
+    title: "Redux State Management",
+    imageSrc:
+      "https://github.com/BharteshGirmal/Website-Designs/blob/main/bhartesh-portfolio/src/Images/E-Commerce.png?raw=true",
+    altText: "Redux State Management",
+    description: `This is a responsive E-Commerce web application built using React and React-Bootstrap. It features a user-friendly interface that works seamlessly across devices. Users can browse products, view details, filter items, and experience a smooth checkout process.`,
+    previewLink: "https://redaux-state-management-bhartesh.netlify.app/",
+  },
+  {
     title: "E-Commerce App using React",
     imageSrc:
       "https://github.com/BharteshGirmal/Website-Designs/blob/main/bhartesh-portfolio/src/Images/E-Commerce.png?raw=true",
