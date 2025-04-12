@@ -55,7 +55,7 @@ export const projects = [
   {
     title: "E-Commerce App using React",
     imageSrc:
-      "https://github.com/BharteshGirmal/Website-Designs/blob/main/Portfolio/Images/E-Commerce.png?raw=true",
+      "https://github.com/BharteshGirmal/Website-Designs/blob/main/bhartesh-portfolio/src/Images/E-Commerce.png?raw=true",
     altText: "E-Commerce React App",
     description: `This is a responsive E-Commerce web application built using React and React-Bootstrap. It features a user-friendly interface that works seamlessly across devices. Users can browse products, view details, filter items, and experience a smooth checkout process.`,
     previewLink: "https://react-e-commerce-bhartesh.netlify.app/",

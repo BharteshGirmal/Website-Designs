@@ -4,13 +4,32 @@
 /* Global Styles */
 * {
   font-family: "Poppins", sans-serif;
-  /* border: 1px dashed wheat; */
 }
 
 :root {
   --green-color: #DFFE02;
   --gray-color: #898989;
   --darkBlue-color: #1a1a1c;
+  --light-bg-color: #f4f4f4;
+  --dark-bg-color: #121212;
+  /* Dark background for body */
+  --text-color-light: #ffffff;
+  /* Light text for dark backgrounds */
+  --text-color-dark: #eaeaea;
+  /* Light gray text */
+  --accent-color: #F1C40F;
+  /* Golden accent color */
+  --primary-color: #3498db;
+  /* Blue primary color */
+}
+
+/* Body Styles */
+body {
+  background-color: var(--dark-bg-color);
+  color: var(--text-color-dark);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* General Card Styles */
@@ -21,6 +40,8 @@
 
 .card {
   padding: 20px;
+  background-color: var(--dark-bg-color);
+  color: var(--text-color-light);
 }
 
 .revertImg {
@@ -29,6 +50,10 @@
 
 .bg-green {
   background-color: var(--green-color) !important;
+}
+
+.bg-black {
+  background-color: var(--dark-bg-color) !important;
 }
 
 .border-green {
@@ -42,7 +67,6 @@
 .bg-dark-blue .card {
   background-color: var(--darkBlue-color) !important;
 }
-
 
 .text-green {
   color: var(--green-color) !important;
@@ -63,6 +87,10 @@
   /* Prevent collapse */
 }
 
+.navbar-custom {
+  background-color: var(--dark-bg-color);
+  color: var(--text-color-light);
+}
 
 .mybtn {
   border: 2px solid var(--green-color) !important;
@@ -74,15 +102,15 @@
   color: var(--green-color) !important;
 }
 
-
 .navbar-toggler-icon {
   background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23DFFE02' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
-
 /* Hero Section */
 .hero-section {
   min-height: 85vh !important;
+  background-color: var(--dark-bg-color);
+  color: var(--text-color-light);
 }
 
 .image-container {
@@ -102,6 +130,7 @@
 h1 {
   font-size: 4rem !important;
   font-family: "Merriweather Sans", sans-serif !important;
+  color: var(--text-color-light);
 }
 
 .para {
@@ -111,10 +140,12 @@ h1 {
 .main-text {
   letter-spacing: 0.2rem;
   font-size: 0.8rem;
+  color: var(--text-color-light);
 }
 
 .main-text-secondary {
   letter-spacing: 0.2rem;
+  color: var(--text-color-light);
 }
 
 img {
@@ -149,7 +180,6 @@ img {
 .certificate-logo {
   background: url('./Images/bhartesh2.png');
 }
-
 
 #crtImg {
   display: block;
@@ -281,7 +311,6 @@ form {
   padding: 0.5em 0.6em;
   border-radius: 50%;
 }
-
 
 .certificate-section .education-timeline {
   position: relative;
@@ -479,26 +508,7 @@ form {
   }
 
   /* Navbar adjustments */
-  .navbar-logo {
-    width: 2.5rem !important;
-  }
-
-  .navbar-toggler-icon {
-    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23DFFE02' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-  }
-
-  /* Adjust timeline for small screens */
-  .timeline-item {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .line {
-    height: 20px;
-  }
-
-  .timeline-item .line {
-    position: relative;
-    left: 0;
+  .navbar-custom .navbar-collapse {
+    display: flex;
   }
 }
