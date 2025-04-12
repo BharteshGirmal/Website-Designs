@@ -25,7 +25,7 @@ export const experienceData = [
   },
 ];
 
-// Certifications Done 
+// Certifications Done
 export const certificates = [
   {
     imgSrc:
@@ -53,6 +53,14 @@ export const certificates = [
 // Personal Projects
 export const projects = [
   {
+    title: "E-Commerce App using React",
+    imageSrc:
+      "https://github.com/BharteshGirmal/Website-Designs/blob/main/Portfolio/Images/E-Commerce.png?raw=true",
+    altText: "E-Commerce React App",
+    description: `This is a responsive E-Commerce web application built using React and React-Bootstrap. It features a user-friendly interface that works seamlessly across devices. Users can browse products, view details, filter items, and experience a smooth checkout process.`,
+    previewLink: "https://react-e-commerce-bhartesh.netlify.app/",
+  },
+  {
     title: "Capstone Clothing App",
     imageSrc:
       "https://github.com/BharteshGirmal/Website-Designs/blob/main/Portfolio/Images/capstone.png?raw=true",
@@ -69,14 +77,7 @@ export const projects = [
     description: `Monster Rolodex is a React-based site for searching monster cards, styled with Bootstrap. It offers a simple, responsive way to browse and find monster cards easily on any device.`,
     previewLink: "https://monster-rolodex-bhartesh.netlify.app",
   },
-  {
-    title: "Restaurant Site",
-    imageSrc:
-      "https://github.com/BharteshGirmal/Website-Designs/blob/main/Portfolio/Images/Restaurant.png?raw=true",
-    altText: "E-Quiz Web Application",
-    description: `This is a restaurant website built entirely with HTML and CSS, featuring a clean, user-friendly design. It offers easy navigation and a visually appealing layout, making it simple for visitors to explore menus, location, and other details.`,
-    previewLink: "https://bhartesh-restaurant-website.netlify.app",
-  },
+
   {
     title: "Furniture Website",
     imageSrc:
@@ -85,14 +86,7 @@ export const projects = [
     description: `This Furniture Website is designed with CSS animations and transitions, offering an eye-catching layout that enhances user experience. The smooth effects and engaging design make browsing furniture collections enjoyable and visually appealing.`,
     previewLink: "https://bhartesh-furniture-site.netlify.app",
   },
-  {
-    title: "GYM Site",
-    imageSrc:
-      "https://github.com/BharteshGirmal/Website-Designs/blob/main/Portfolio/Images/GYM.png?raw=true",
-    altText: "E-Quiz Web Application",
-    description: `This gym website is built with HTML and CSS, featuring a clean navigation bar and a contact form for easy communication. Its simple, user-friendly design makes it easy for visitors to explore gym services and get in touch quickly.`,
-    previewLink: "https://bhartesh-gym-site.netlify.app",
-  },
+
   {
     title: "E-Quiz Web Application",
     imageSrc:
@@ -182,4 +176,3 @@ export const technologies = [
   },
   { name: "AWS", icon: "fab fa-aws fa-3x text-warning", color: "text-green" },
 ];
-    
