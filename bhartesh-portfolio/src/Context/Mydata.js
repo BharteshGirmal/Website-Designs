@@ -55,19 +55,20 @@ export const projects = [
   {
     title: "React Tutorial App",
     imageSrc:
-      "https://github.com/BharteshGirmal/Website-Designs/blob/main/bhartesh-portfolio/src/Images/E-Commerce.png?raw=true",
+      "https://github.com/BharteshGirmal/Website-Designs/blob/main/bhartesh-portfolio/src/Images/React%20Tutorail.png?raw=true",
     altText: "React Tutorial App",
-    description: `This is a responsive E-Commerce web application built using React and React-Bootstrap. It features a user-friendly interface that works seamlessly across devices. Users can browse products, view details, filter items, and experience a smooth checkout process.`,
+    description: `A responsive e-commerce web application built with React and React-Bootstrap. It offers a clean, user-friendly interface that works seamlessly across devices. Users can browse products, view detailed information, apply filters, and proceed through a smooth checkout experience.`,
     previewLink: "https://react-tutorial-bhartesh.netlify.app/",
   },
   {
     title: "Redux State Management",
     imageSrc:
-      "https://github.com/BharteshGirmal/Website-Designs/blob/main/bhartesh-portfolio/src/Images/E-Commerce.png?raw=true",
+      "https://github.com/BharteshGirmal/Website-Designs/blob/main/bhartesh-portfolio/src/Images/State%20Management%20Redux.png?raw=true",
     altText: "Redux State Management",
-    description: `This is a responsive E-Commerce web application built using React and React-Bootstrap. It features a user-friendly interface that works seamlessly across devices. Users can browse products, view details, filter items, and experience a smooth checkout process.`,
+    description: `A demonstration of global state management using Redux in a React-based e-commerce application. It showcases how to efficiently manage shared data, update UI components, and maintain a clean state architecture across the app.`,
     previewLink: "https://redaux-state-management-bhartesh.netlify.app/",
   },
+
   {
     title: "E-Commerce App using React",
     imageSrc:
