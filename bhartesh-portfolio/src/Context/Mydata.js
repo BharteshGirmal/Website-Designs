@@ -1,63 +1,59 @@
-// Work Experince Section
 export const experienceData = [
   {
     title: "Professional Experience",
     role: "Solution Developer",
-    duration: "2+ years of experience (Jan-2023 to Present)",
+    duration: "Jan 2023 – Present (2 years 7 months)",
     items: [
-      "Contributed to the Cost Engineering Hub Application for Tata Motors, impacting over 200+ users across multiple divisions by implementing client-specific features and resolving critical performance bottlenecks.",
-      "Delivered 30+ React.js components to build highly interactive user interfaces, reducing user interaction time by 25% and increasing application responsiveness.",
-      "Improved UI performance by optimizing JavaScript code, resulting in a 40% faster page load time across key workflows.",
-      "Streamlined dynamic functionality using JavaScript and jQuery, enhancing the overall user experience and application reliability.",
-      "Provided on-time delivery for over 15 major client-requested features, ensuring seamless integration and user satisfaction.",
+      "Developed and maintained the Cost Engineering Hub Application at Tata Motors, used by 300+ users across divisions, delivering performance improvements and feature enhancements.",
+      "Built 30+ modular React.js components, significantly reducing user interaction time by 25% and boosting overall UI responsiveness.",
+      "Optimized front-end performance using React, JavaScript, and browser profiling tools, resulting in a 40% faster load time on critical workflows.",
+      "Integrated dynamic UI logic using JavaScript and jQuery, ensuring seamless interactions and reliability across devices.",
+      "Collaborated with cross-functional teams to successfully deliver 15+ client-driven features, adhering to Agile methodologies and sprint timelines.",
     ],
   },
   {
     title: "Additional Experience",
-    role: "Skilled Engineer GET",
-    duration: "Jan-2022 to Dec-2022",
+    role: "Skilled Engineer – Graduate Engineer Trainee (GET)",
+    duration: "Jan 2022 – Dec 2022",
     items: [
-      "Successfully contributed to the development of enterprise-grade applications, improving team productivity by 20% through optimized workflows and streamlined processes.",
-      "Built and styled over 50+ responsive UI components using HTML5, CSS3, and Bootstrap, ensuring cross-browser compatibility and accessibility.",
-      "Collaborated with back-end teams to integrate APIs, leading to a 30% reduction in data fetch time for critical application features.",
-      "Played a key role in delivering projects on time by managing tasks effectively and adhering to Agile methodologies, including sprint planning and peer reviews.",
+      "Worked on enterprise web applications with modern JavaScript and RESTful APIs, improving team workflows by 20%.",
+      "Developed 50+ responsive and accessible UI components using HTML5, CSS3, and Bootstrap for cross-browser consistency.",
+      "Collaborated closely with backend engineers to consume REST APIs using Axios/Fetch, reducing data-fetch delays by 30%.",
+      "Followed Agile/Scrum processes including sprint planning, code reviews, and story point estimations to ensure delivery.",
     ],
   },
 ];
 
-// Certifications Done
 export const certificates = [
   {
     imgSrc:
       "https://github.com/BharteshGirmal/Website-Designs/blob/main/Portfolio/Images/Udemy%20New.png?raw=true",
     altText: "Complete React Developer",
-    title: "Complete React Developer (w/Redux, Hooks, GraphQL)",
+    title: "Complete React Developer (Redux, Hooks, GraphQL)",
     institution: "Udemy",
   },
   {
     imgSrc:
       "https://github.com/BharteshGirmal/Website-Designs/blob/main/Portfolio/Images/Udemy%20New.png?raw=true",
-    altText: "The Complete JavaScript Course",
+    altText: "JavaScript Course",
     title: "The Complete JavaScript Course",
-    period: "(09/2023 - 12/2023)",
+    period: "(Sep 2023 – Dec 2023)",
   },
   {
     imgSrc:
       "https://github.com/BharteshGirmal/Website-Designs/blob/main/Portfolio/Images/C-DAC_LogoTransp.png?raw=true",
     altText: "CDAC Certification",
-    title: "Center for Development of Advanced Computing (CDAC)",
-    institution: "CDAC ACTs Pune",
+    title: "Advanced Computing Diploma (PG-DAC)",
+    institution: "CDAC ACTS Pune",
   },
 ];
-
-// Personal Projects
 export const projects = [
   {
     title: "React Tutorial App",
     imageSrc:
       "https://github.com/BharteshGirmal/Website-Designs/blob/main/bhartesh-portfolio/src/Images/React%20Tutorail.png?raw=true",
     altText: "React Tutorial App",
-    description: `A responsive e-commerce web application built with React and React-Bootstrap. It offers a clean, user-friendly interface that works seamlessly across devices. Users can browse products, view detailed information, apply filters, and proceed through a smooth checkout experience.`,
+    description: `An e-commerce tutorial app using React and Bootstrap. Features product listing, filtering, and responsive design with clean checkout flow.`,
     previewLink: "https://react-tutorial-bhartesh.netlify.app/",
   },
   {
@@ -65,49 +61,45 @@ export const projects = [
     imageSrc:
       "https://github.com/BharteshGirmal/Website-Designs/blob/main/bhartesh-portfolio/src/Images/State%20Management%20Redux.png?raw=true",
     altText: "Redux State Management",
-    description: `A demonstration of global state management using Redux in a React-based e-commerce application. It showcases how to efficiently manage shared data, update UI components, and maintain a clean state architecture across the app.`,
+    description: `Demonstrates centralized state management using Redux in a React-based shopping app, showcasing scalable architecture and real-time updates.`,
     previewLink: "https://redaux-state-management-bhartesh.netlify.app/",
   },
-
   {
-    title: "E-Commerce App using React",
+    title: "E-Commerce App (React)",
     imageSrc:
       "https://github.com/BharteshGirmal/Website-Designs/blob/main/bhartesh-portfolio/src/Images/E-Commerce.png?raw=true",
-    altText: "E-Commerce React App",
-    description: `This is a responsive E-Commerce web application built using React and React-Bootstrap. It features a user-friendly interface that works seamlessly across devices. Users can browse products, view details, filter items, and experience a smooth checkout process.`,
+    altText: "E-Commerce App",
+    description: `A fully responsive shopping platform using React, React Router, and Bootstrap. Includes product filtering and mobile-first design.`,
     previewLink: "https://react-e-commerce-bhartesh.netlify.app/",
   },
   {
     title: "Capstone Clothing App",
     imageSrc:
       "https://github.com/BharteshGirmal/Website-Designs/blob/main/Portfolio/Images/capstone.png?raw=true",
-    altText: "Capstone Clothing App",
-    description: `Capstone Clothing is an online clothing store made with React and styled using Bootstrap. It’s designed to be easy to use on any device, letting customers browse items, view details, and shop smoothly. With a simple checkout process and helpful product filters, Capstone Clothing provides a stylish and straightforward shopping experience.`,
+    altText: "Capstone Clothing",
+    description: `An online fashion store built with React and Bootstrap. Designed for seamless browsing, search filters, and checkout UX.`,
     previewLink: "https://bhartesh-capstone-clothing.netlify.app",
   },
   {
     title: "Monster Rolodex",
     imageSrc:
       "https://github.com/BharteshGirmal/Website-Designs/blob/main/Portfolio/Images/monster.png?raw=true",
-
     altText: "Monster Rolodex",
-    description: `Monster Rolodex is a React-based site for searching monster cards, styled with Bootstrap. It offers a simple, responsive way to browse and find monster cards easily on any device.`,
+    description: `A mini React app to search monsters fetched via API. Demonstrates use of functional components, hooks, and dynamic filtering.`,
     previewLink: "https://monster-rolodex-bhartesh.netlify.app",
   },
   {
-    title: "E-Quiz Web Application",
+    title: "E-Quiz Web App (Full Stack)",
     imageSrc:
       "https://github.com/BharteshGirmal/Website-Designs/blob/main/Portfolio/Images/Quiz.png?raw=true",
-    altText: "E-Quiz Web Application",
-    description: `E-Quiz is a desktop application for online quizzes, offering CRUD operations for both students and teachers. It allows students to view their results and track performance.`,
+    altText: "E-Quiz Web App",
+    description: `Full-stack web app with quiz features for students and teachers. Includes authentication, CRUD for quiz sets, and result analytics.`,
     previewLink: "https://github.com/BharteshGirmal/E-Quiz-Web-Application",
   },
 ];
-
-// Technologies Known
 export const technologies = [
   {
-    name: "React",
+    name: "React.js",
     icon: "fab fa-react fa-3x text-info",
     color: "text-green",
   },
@@ -122,23 +114,8 @@ export const technologies = [
     color: "text-green",
   },
   {
-    name: "GraphQL",
-    icon: "fas fa-database fa-3x text-purple",
-    color: "text-green",
-  },
-  {
-    name: "JavaScript",
+    name: "JavaScript (ES6+)",
     icon: "fab fa-js-square fa-3x text-yellow",
-    color: "text-green",
-  },
-  {
-    name: "HTML",
-    icon: "fab fa-html5 fa-3x text-danger",
-    color: "text-green",
-  },
-  {
-    name: "CSS",
-    icon: "fab fa-css3-alt fa-3x text-primary",
     color: "text-green",
   },
   {
@@ -147,13 +124,8 @@ export const technologies = [
     color: "text-green",
   },
   {
-    name: "Python",
-    icon: "fab fa-python fa-3x text-blue",
-    color: "text-green",
-  },
-  {
-    name: "Java",
-    icon: "fab fa-java fa-3x text-warning",
+    name: "Express.js",
+    icon: "fas fa-server fa-3x text-secondary",
     color: "text-green",
   },
   {
@@ -167,19 +139,41 @@ export const technologies = [
     color: "text-green",
   },
   {
+    name: "HTML5",
+    icon: "fab fa-html5 fa-3x text-danger",
+    color: "text-green",
+  },
+  {
+    name: "CSS3",
+    icon: "fab fa-css3-alt fa-3x text-primary",
+    color: "text-green",
+  },
+  {
+    name: "Bootstrap",
+    icon: "fab fa-bootstrap fa-3x text-purple",
+    color: "text-green",
+  },
+  {
+    name: "Git & GitHub",
+    icon: "fab fa-github fa-3x text-orange",
+    color: "text-green",
+  },
+  { name: "Linux", icon: "fab fa-linux fa-3x text-green", color: "text-green" },
+  { name: "AWS", icon: "fab fa-aws fa-3x text-warning", color: "text-green" },
+  {
     name: "Docker",
     icon: "fab fa-docker fa-3x text-primary",
     color: "text-green",
   },
   {
-    name: "Git",
-    icon: "fa-brands fa-github fa-3x text-orange",
+    name: "GraphQL",
+    icon: "fas fa-database fa-3x text-purple",
     color: "text-green",
   },
+  { name: "Java", icon: "fab fa-java fa-3x text-warning", color: "text-green" },
   {
-    name: "Linux",
-    icon: "fa-brands fa-linux fa-3x text-green",
+    name: "Python",
+    icon: "fab fa-python fa-3x text-blue",
     color: "text-green",
   },
-  { name: "AWS", icon: "fab fa-aws fa-3x text-warning", color: "text-green" },
 ];
