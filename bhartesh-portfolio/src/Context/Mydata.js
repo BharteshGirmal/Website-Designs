@@ -1,25 +1,28 @@
 export const experienceData = [
   {
     title: "Professional Experience",
-    role: "Solution Developer",
-    duration: "Jan 2023 – Present (2 years 7 months)",
+    company: "Tata Technologies",
+    role: "Software Developer",
+    duration: "Jan 2023 – Present (3 years)",
     items: [
-      "Developed and maintained the Cost Engineering Hub Application at Tata Motors, used by 300+ users across divisions, delivering performance improvements and feature enhancements.",
-      "Built 30+ modular React.js components, significantly reducing user interaction time by 25% and boosting overall UI responsiveness.",
-      "Optimized front-end performance using React, JavaScript, and browser profiling tools, resulting in a 40% faster load time on critical workflows.",
-      "Integrated dynamic UI logic using JavaScript and jQuery, ensuring seamless interactions and reliability across devices.",
-      "Collaborated with cross-functional teams to successfully deliver 15+ client-driven features, adhering to Agile methodologies and sprint timelines.",
+      "Developed and maintained the Cost Engineering Hub (CE Hub) Application at Tata Motors, used by 300+ internal users for cost estimation and approval workflows.",
+      "Built and deployed 30+ reusable React.js components with TypeScript, improving scalability and maintainability of UI workflows.",
+      "Optimized React components with lazy loading and code splitting, reducing application load time by 40%.",
+      "Integrated REST APIs to automate cost estimation and approval processes, ensuring seamless data communication.",
+      "Implemented unit tests using Jest and React Testing Library, increasing test coverage and code quality.",
+      "Designed and maintained CI/CD pipelines with Jenkins, Docker, and AWS, accelerating production releases.",
+      "Mentored junior developers, conducted peer code reviews, and enforced best practices in React and TypeScript.",
+      "Collaborated with architects to translate complex business requirements into scalable technical solutions.",
     ],
   },
   {
     title: "Additional Experience",
-    role: "Skilled Engineer – Graduate Engineer Trainee (GET)",
-    duration: "Jan 2022 – Dec 2022",
+    company: "Zanvar Group of Industries Kolhapur",
+    role: "Process Engineer",
+    duration: "Nov 2020 – Dec 2021",
     items: [
-      "Worked on enterprise web applications with modern JavaScript and RESTful APIs, improving team workflows by 20%.",
-      "Developed 50+ responsive and accessible UI components using HTML5, CSS3, and Bootstrap for cross-browser consistency.",
-      "Collaborated closely with backend engineers to consume REST APIs using Axios/Fetch, reducing data-fetch delays by 30%.",
-      "Followed Agile/Scrum processes including sprint planning, code reviews, and story point estimations to ensure delivery.",
+      "Contributed to the Automated Foundry Process project at Zanvar Group of Industries, improving process optimization and workflow accuracy.",
+      "Worked closely with cross-functional teams to enhance operational efficiency and ensure compliance with quality standards.",
     ],
   },
 ];
@@ -28,76 +31,68 @@ export const certificates = [
   {
     imgSrc:
       "https://github.com/BharteshGirmal/Website-Designs/blob/main/Portfolio/Images/Udemy%20New.png?raw=true",
-    altText: "Complete React Developer",
-    title: "Complete React Developer (Redux, Hooks, GraphQL)",
+    altText: "Certified React Developer",
+    title: "Certified React Developer",
     institution: "Udemy",
+    period: "(2025)",
   },
   {
     imgSrc:
       "https://github.com/BharteshGirmal/Website-Designs/blob/main/Portfolio/Images/Udemy%20New.png?raw=true",
-    altText: "JavaScript Course",
-    title: "The Complete JavaScript Course",
-    period: "(Sep 2023 – Dec 2023)",
+    altText: "Complete JavaScript Course",
+    title: "The Complete JavaScript Course (ES6+)",
+    institution: "Udemy",
+    period: "(2024)",
   },
   {
     imgSrc:
       "https://github.com/BharteshGirmal/Website-Designs/blob/main/Portfolio/Images/C-DAC_LogoTransp.png?raw=true",
     altText: "CDAC Certification",
-    title: "Advanced Computing Diploma (PG-DAC)",
+    title: "Post Graduate Diploma in Advanced Computing (PG-DAC)",
     institution: "CDAC ACTS Pune",
+    period: "(2022)",
   },
 ];
+
 export const projects = [
   {
     title: "React Tutorial App",
     imageSrc:
       "https://github.com/BharteshGirmal/Website-Designs/blob/main/bhartesh-portfolio/src/Images/React%20Tutorail.png?raw=true",
     altText: "React Tutorial App",
-    description: `An e-commerce tutorial app using React and Bootstrap. Features product listing, filtering, and responsive design with clean checkout flow.`,
+    description:
+      "Built a responsive e-commerce UI with reusable components and category-based layouts using React and React-Bootstrap.",
     previewLink: "https://react-tutorial-bhartesh.netlify.app/",
-    
   },
   {
-    title: "Redux State Management",
+    title: "Redux & Flux State Management App",
     imageSrc:
       "https://github.com/BharteshGirmal/Website-Designs/blob/main/bhartesh-portfolio/src/Images/State%20Management%20Redux.png?raw=true",
     altText: "Redux State Management",
-    description: `Demonstrates centralized state management using Redux in a React-based shopping app, showcasing scalable architecture and real-time updates.`,
+    description:
+      "Implemented scalable state management with Redux and Flux in a React application, demonstrating centralized store and unidirectional data flow.",
     previewLink: "https://redaux-state-management-bhartesh.netlify.app/",
   },
   {
-    title: "E-Commerce App (React)",
+    title: "E-Commerce Web App",
     imageSrc:
       "https://github.com/BharteshGirmal/Website-Designs/blob/main/bhartesh-portfolio/src/Images/E-Commerce.png?raw=true",
     altText: "E-Commerce App",
-    description: `A fully responsive shopping platform using React, React Router, and Bootstrap. Includes product filtering and mobile-first design.`,
+    description:
+      "Developed a full e-commerce platform using React, React-Bootstrap, and JWT authentication with cart, filters, and secure checkout functionality.",
     previewLink: "https://react-e-commerce-bhartesh.netlify.app/",
-  },
-  {
-    title: "Capstone Clothing App",
-    imageSrc:
-      "https://github.com/BharteshGirmal/Website-Designs/blob/main/Portfolio/Images/capstone.png?raw=true",
-    altText: "Capstone Clothing",
-    description: `An online fashion store built with React and Bootstrap. Designed for seamless browsing, search filters, and checkout UX.`,
-    previewLink: "https://bhartesh-capstone-clothing.netlify.app",
-  },
-  {
-    title: "Monster Rolodex",
-    imageSrc:
-      "https://github.com/BharteshGirmal/Website-Designs/blob/main/Portfolio/Images/monster.png?raw=true",
-    altText: "Monster Rolodex",
-    description: `A mini React app to search monsters fetched via API. Demonstrates use of functional components, hooks, and dynamic filtering.`,
-    previewLink: "https://monster-rolodex-bhartesh.netlify.app",
   },
   {
     title: "E-Quiz Web App (Full Stack)",
     imageSrc:
       "https://github.com/BharteshGirmal/Website-Designs/blob/main/Portfolio/Images/Quiz.png?raw=true",
     altText: "E-Quiz Web App",
-    description: `Full-stack web app with quiz features for students and teachers. Includes authentication, CRUD for quiz sets, and result analytics.`,
+    description:
+      "Created a quiz platform using React, Bootstrap, Java JEE, and Spring MVC with role-based access, quiz management, and performance tracking.",
     previewLink: "https://github.com/BharteshGirmal/E-Quiz-Web-Application",
   },
 ];
+
 export const technologies = [
   {
     name: "React.js",
@@ -176,5 +171,20 @@ export const technologies = [
     name: "Python",
     icon: "fab fa-python fa-3x text-blue",
     color: "text-green",
+  },
+];
+
+export const awards = [
+  {
+    title: "Champion of the Month (Q4 2024)",
+    company: "Tata Technologies",
+    description:
+      "Recognized at Tata Motors for delivering high-performance cost engineering tools.",
+  },
+  {
+    title: "Digitalization Award",
+    company: "Tata Motors Ltd",
+    description:
+      "Awarded by Tata Motors PV Division for the successful delivery of the CE Hub platform.",
   },
 ];

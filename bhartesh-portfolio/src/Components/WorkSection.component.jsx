@@ -4,11 +4,11 @@ import "aos/dist/aos.css"; // AOS Styles
 import { ContextAPI } from "../Context/ContextApi";
 
 // Reusable ExperienceCard Component
-const ExperienceCard = ({ title, role, duration, items }) => {
+const ExperienceCard = ({ title,company, role, duration, items, }) => {
   return (
     <div className="col-lg-6 d-flex flex-column">
       <span className="text-white text-uppercase main-text">{title}</span>
-      <h2 className="text-green fw-bold">Tata Technologies</h2>
+      <h2 className="text-green fw-bold">{company}</h2>
       <h5 className="text-white">{role}</h5>
       <p className="text-green italic">{duration}</p>
       <ul className="itemlist mt-4 mb-4">
@@ -37,6 +37,7 @@ const WorkSection = () => {
             <ExperienceCard
               key={index}
               title={experience.title}
+              company={experience.company}
               role={experience.role}
               duration={experience.duration}
               items={experience.items}

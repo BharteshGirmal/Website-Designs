@@ -11,19 +11,20 @@ const HeroSection = () => {
               Hello I'm
             </span>
             <h1 className="text-white fw-bold">
-              Web Designer & <span className="text-green">Developer</span>
+              Software <span className="text-green">Developer</span>
             </h1>
             <p className="text-gray mt-4 mb-4 para">
-              A dedicated Front-End Developer with expertise in building
-              interactive, responsive, and user-focused web applications.
-              Proficient in technologies like React.js, JavaScript, HTML5, CSS3,
-              and Bootstrap, I bring a strong foundation in Core and Advanced
-              Java for developing full-stack applications. My experience
-              includes optimizing application performance and delivering
-              seamless functionality to enhance user experience. Known for
-              attention to detail and problem-solving, I aim to create efficient
-              and scalable solutions that align with project goals.
+              A passionate Full-Stack Developer with 3 years of experience
+              building scalable, responsive, and high-performance web
+              applications. Skilled in React.js, TypeScript, JavaScript (ES6+),
+              Redux, and modern UI frameworks like Bootstrap and Tailwind CSS.
+              Experienced in optimizing React components with lazy loading and
+              code splitting to improve load times, integrating REST APIs, and
+              implementing CI/CD pipelines using Jenkins, Docker, and AWS. Adept
+              at mentoring, collaborating in Agile teams, and delivering clean,
+              maintainable code to create seamless user experiences.
             </p>
+
             <a
               className="btn mybtn rounded-0 text-uppercase bg-green"
               href="#work-section"
