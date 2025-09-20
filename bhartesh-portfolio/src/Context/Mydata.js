@@ -55,6 +55,7 @@ export const projects = [
     altText: "React Tutorial App",
     description: `An e-commerce tutorial app using React and Bootstrap. Features product listing, filtering, and responsive design with clean checkout flow.`,
     previewLink: "https://react-tutorial-bhartesh.netlify.app/",
+    
   },
   {
     title: "Redux State Management",
